@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assests/netflix.ico">
+    
+    <title>Netflix</title>
+</head>
+
+
+<body>
+    <!-- Header container -->
+    <header class="header">
+        <img src="assests/netflix.png" alt="logo" id="netflix-logo">
+        <h3><a href="#">Homepage</a></h3>
+        <h3><a href="#">Series</a></h3>
+        <h3><a href="#">Movies</a></h3>
+        <div class="input-container">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <div id="searchResults"></div>
+        </div>
+        <button id="" class="watchList-Btn">WatchList</button>
+    </header>
+
+    <!-- Banner container -->
+    <div id="banner-container">
+        <img id="banner" src="assests/foto3.jpg"  alt="" />
+        <div id="details-container">
+            <h1 id="banner-title">Beautiful Woman I've Ever Meet </h1>
+            <div id="button-container">
+                <button id="play-button">
+                    <img style="width: 0.8rem; height: 0.8rem;" src="assests/play.png" />
+                    <span>Play</span>
+                </button>
+                <button id="more-info">
+                    <img id="info-icon" src="assests/info.png" />
+                    <span>More Information</span>
+                </button>
+            </div>
+        </div>
+        <div id="empty"></div>
+    </div>
+
+    <!-- Netflix Originals container -->
+    <section class="movie-section">
+        <h1>Our Photos :p</h1>
+
+        <div class=" movie-container">
+            <button class="navigation-button previous netflix-previous">&lt;</button>
+
+            <!-- Display netflix movies here -->
+            <div class="movies-box netflix-container">
+                <div>
+                    <img src="assests/foto1.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="assests/foto7.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="assests/foto6.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="assests/foto4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assests/foto5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assests/foto8.jpg" alt="">
+                </div>
+                
+            </div>
+
+            <button class="navigation-button next netflix-next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Netflix Shows container -->
+    <section class="movie-section ">
+        <h1>Coming Soon Nunggu Momen Lainnyaa hehe</h1>
+
+         <div class=" movie-container">
+            <button class="navigation-button previous netflixShows-previous">&lt;</button>
+
+            <!-- Display netflixShows movies here -->
+            <div class="movies-box netflixShows-container"></div>
+
+            <button class="navigation-button next netflixShows-next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Trending Movies container -->
+    
+
+     <script src="index.js"></script> 
+</body>
+
+<style>
+    .banner-container img {
+            width: 75%;
+            height: auto;
+            object-fit: cover;
+        }
+    .header h3 a {
+        color:white;
+        margin-top: 18px;
+        padding-top: 8px;
+        text-decoration: none;
+    }
+    .header h3 a:hover {
+       color: rgba(192, 248, 6, 0.9);
+       transition: ease-in-out 0.3s;
+    }
+</style>
+
+</html>
